@@ -172,8 +172,6 @@ Run all cells.
 ## 👩‍💻 Authors
 
 - Divya Sree P
-- Nila J R
-- Krithika A
 
 M.Sc. Data Science  
 Vellore Institute of Technology
