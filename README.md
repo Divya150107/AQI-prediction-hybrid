@@ -1,22 +1,95 @@
-# 🌍 Hybrid AQI Prediction System
+# 🌍 Hybrid Time Series and Machine Learning Approach for AQI Prediction
 
-A Hybrid Air Quality Index (AQI) Prediction System that combines machine learning techniques with explainable analysis to predict air quality levels and support environmental monitoring.
-
-## 📌 Project Overview
-
-Air pollution has become one of the major environmental challenges worldwide. Accurate AQI prediction helps governments, researchers, and the public make informed decisions regarding health and pollution control.
-
-This project develops a hybrid machine learning model to predict AQI using environmental and meteorological parameters. The workflow includes data preprocessing, feature engineering, model training, evaluation, and visualization.
+A machine learning project that predicts the **Air Quality Index (AQI)** for major Indian metropolitan cities by combining **time-series analysis**, **feature engineering**, and **ensemble machine learning models**.
 
 ---
 
-## 🎯 Objectives
+## 📖 Overview
 
-- Predict Air Quality Index (AQI) accurately.
-- Perform data preprocessing and feature engineering.
-- Compare machine learning model performance.
-- Evaluate the prediction using multiple performance metrics.
-- Visualize trends and prediction results.
+Air pollution is one of the most significant environmental challenges affecting public health. This project develops a hybrid AQI prediction framework that compares traditional time-series forecasting with machine learning models to improve prediction accuracy.
+
+The study focuses on three Indian metropolitan cities:
+
+- Delhi
+- Chennai
+- Mumbai
+
+The project evaluates both statistical and machine learning techniques for AQI forecasting and demonstrates that ensemble learning models outperform conventional ARIMA models.
+
+---
+
+## ✨ Features
+
+- Data preprocessing
+- Missing value imputation
+- IQR-based outlier treatment
+- Temporal feature engineering
+- Seasonal feature engineering
+- Lag feature creation
+- Model comparison
+- Cross-validation
+- Feature importance analysis
+- AQI prediction visualization
+
+---
+
+## 📊 Dataset
+
+The dataset contains daily air quality observations including:
+
+- PM2.5
+- PM10
+- NO₂
+- SO₂
+- CO
+- O₃
+- AQI
+
+Cities included:
+
+- Delhi
+- Chennai
+- Mumbai
+
+---
+
+## ⚙️ Machine Learning Models
+
+- Linear Regression
+- Ridge Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+### Baseline Model
+
+- ARIMA
+
+---
+
+## 🏆 Best Model
+
+**Gradient Boosting Regressor**
+
+Performance:
+
+| Metric | Value |
+|--------|-------|
+| R² Score | **0.9719** |
+| RMSE | **16.31** |
+| MAE | **11.33** |
+| MAPE | **9.85%** |
+
+---
+
+## 📈 Results
+
+The project demonstrates:
+
+- Ensemble models outperform linear regression.
+- Gradient Boosting provides the highest prediction accuracy.
+- Lag features are the most important predictors.
+- PM2.5 strongly influences AQI.
+- Machine learning significantly outperforms ARIMA.
 
 ---
 
@@ -28,11 +101,10 @@ This project develops a hybrid machine learning model to predict AQI using envir
 - NumPy
 - Scikit-learn
 - Matplotlib
-- Seaborn
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
 ```
 AQI-prediction-hybrid/
@@ -46,54 +118,12 @@ AQI-prediction-hybrid/
 
 ---
 
-## 📊 Workflow
-
-1. Data Collection
-2. Data Cleaning
-3. Feature Engineering
-4. Exploratory Data Analysis
-5. Model Training
-6. AQI Prediction
-7. Performance Evaluation
-8. Visualization
-
----
-
-## 📈 Evaluation Metrics
-
-The model is evaluated using:
-
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-
----
-
-## 📷 Visualizations
-
-The notebook contains visualizations including:
-
-- AQI Distribution
-- Correlation Heatmap
-- Feature Importance
-- Actual vs Predicted AQI
-- Model Performance
-
----
-
-## 🚀 How to Run
+## 🚀 Installation
 
 Clone the repository
 
 ```bash
 git clone https://github.com/Divya150107/AQI-prediction-hybrid.git
-```
-
-Move into the project folder
-
-```bash
-cd AQI-prediction-hybrid
 ```
 
 Install dependencies
@@ -118,20 +148,32 @@ Run all cells.
 
 ---
 
-## 📌 Future Improvements
+## 📷 Sample Outputs
 
-- Deep Learning based AQI prediction
-- Real-time AQI forecasting
-- IoT sensor integration
-- Explainable AI (SHAP/LIME)
-- Web dashboard deployment
+- AQI Distribution
+- Seasonal AQI Analysis
+- Model Comparison
+- Actual vs Predicted AQI
+- Residual Analysis
+- Feature Importance
 
 ---
 
-## 👩‍💻 Author
+## 🔮 Future Work
 
-**Divya Sree P**
+- Weather parameter integration
+- Real-time AQI prediction
+- LSTM-based forecasting
+- Explainable AI (SHAP)
+- Deployment using Streamlit
 
-M.Sc. Data Science
+---
 
-GitHub: https://github.com/Divya150107
+## 👩‍💻 Authors
+
+- Divya Sree P
+- Nila J R
+- Krithika A
+
+M.Sc. Data Science  
+Vellore Institute of Technology
